@@ -1,0 +1,21 @@
+[sun jun 10, 2007]
+modules in Kavir project are just articles but articles are not modules,
+when an article has the following tags you can call it a module :)
+
+[module-title:title]
+[module-position:position]
+[module-order:order]
+[module-style:style]
+
+your module data ( include wiki tags )
+bla bla bla bla bla bla bla bla bla bla bla bla 
+bla bla bla bla bla bla bla bla bla bla bla bla 
+bla bla bla bla bla bla bla bla bla bla bla bla 
+bla bla bla bla bla bla bla bla bla bla bla bla 
+bla bla bla bla bla bla bla bla bla bla bla bla 
+bla bla bla bla bla bla bla bla bla bla bla bla 
+
+[category:sys-modules]
+
+ERFAN
+-------------------------------------------------------------------------------

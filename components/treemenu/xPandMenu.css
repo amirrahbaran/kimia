@@ -1,0 +1,60 @@
+#container {
+	width:200px;
+}
+
+
+.Xtree, .XtreeRoot {
+	list-style-type:none;
+	padding-left:0px;
+	margin:0;
+}
+.Xtree {
+	/* Indentation of a sub-item compared to its parent */
+	padding-left:25px;
+	margin-left:3px;
+	border-left:1px dotted #aaa;
+}
+.Xnode {
+	/* Top and bottom space for a node item */
+	margin-top:3px;margin-bottom:3px;
+	/* Height of the node item */
+	height:20px;
+	/* Node background color */
+	background:#fff;
+	/* Font specifications for a node */
+	font-family:verdana;
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+	cursor:pointer;
+}
+.Xleaf {
+	/* Top and bottom space for a leaf item */
+	margin-top:2px;margin-bottom:2px;
+	/* Height of the leag item */
+	height:20px;
+	/* Leaf background color */
+	background:#fff;
+	/* Font specifications for a leaf */
+	font-family:verdana;
+	font-weight:normal;
+	font-size:11px;
+	color:black;
+}
+.Xnode a {
+	text-decoration:none;
+	color:black;
+}
+.Xnode a:hover {
+	color:red;
+	text-decoration:underline;
+}
+.Xleaf a {
+	text-decoration:none;
+	color:black;
+}
+.Xleaf a:hover {
+	color:red;
+	text-decoration:none;
+	background:#eee;
+}

@@ -1,0 +1,31 @@
+[sun jun 10, 2007]
+good news, I finally found my XML parser of dreams :)
+there is a nice class on www.phpclasses.org named "The DOMIT! XML Parser"
+which is fast, cute and best of all it works with PHP4 and above.
+
+I think we should switch from "simpleXML" to "The DOMIT! XML Parser"
+
+ERFAN
+-------------------------------------------------------------------------------
+[mon jun 11, 2007]
+some parameters have to be defined in the installer for using in the com_rss;
+
+AMIR
+-------------------------------------------------------------------------------
+[thu jun 14, 2007]
+all the components have to be reviewed for fatal errors;(by checking functions 
+if they used twice or more in a page.)
+
+AMIR
+-------------------------------------------------------------------------------
+[sat jun 16, 2007]
+the following items have to be added to com_category :
+	* filtering articles by name (alphabet letters), editor, time, date;
+
+AMIR
+-------------------------------------------------------------------------------
+[sun jun 17, 2007]
+all the input chracters have to be filtered by htmlspecialchars function;
+
+ERFAN
+

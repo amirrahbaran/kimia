@@ -1,0 +1,301 @@
+body {
+	background-color:#D9ECFF;
+}
+
+table#main {
+	border-collapse: collapse;
+	width: 95%;
+}
+
+.mainbody {
+	border-collapse: collapse;
+	width: 550px;
+}
+
+a:link,a:visited {
+	color: #22FF13;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+ul {
+	text-indent: 10px;
+	padding-right: 20px;
+}
+
+ol {
+	text-indent: 10px;
+	padding-right: 20px;
+}
+
+li {
+	height: 15px;
+	text-indent: 0px;
+}
+
+ul.tabs {
+	list-style:none;
+}
+
+li.tabs {
+	margin-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	list-style:none;
+	width: 65px;
+	line-height: 30px;
+	height: 30px;
+	white-space: nowrap;
+	float: right;
+}
+
+a.tabs:link,a.tabs:visited {
+	display: block;
+	border: none;
+	text-align:center;
+	text-indent: 0px;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: FFFFFF;
+	background: url(./images/tabs_normal.png)  no-repeat;
+}
+
+a.tabs:hover {
+	display: block;
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: FFFFFF;
+	background: url(./images/tabs_selected.png)  no-repeat;
+}
+
+ul.button {
+	list-style:none;
+}
+
+li.button {
+	margin-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	list-style:none;
+	width: 105px;
+	line-height: 30px;
+	height: 30px;
+	white-space: nowrap;
+	float: right;
+}
+
+a.button:link,a.button:visited {
+	display: block;
+	border: none;
+	text-align:center;
+	text-indent: 0px;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: FFFFFF;
+	background: url(./images/button_normal.png)  no-repeat;
+}
+
+a.button:hover {
+	display: block;
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: FFFFFF;
+	background: url(./images/button_selected.png)  no-repeat;
+}
+
+.warning {
+	color: #FFFF00;
+}
+
+.mybutton {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	background: url(./images/button_normal.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.mybutton:hover {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	background: url(./images/button_selected.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+span.highlight {
+	background-color: #0000DD;
+	color: #FFFF00;
+}
+
+code {
+	display: block;
+	text-indent: 0px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px dashed #FFFFFF;
+	color: #FFFFCC;
+}
+
+div#page {
+	text-indent: 25px;
+	text-align:right;
+	font-family: tahoma;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div#edit {
+	text-indent: 0px;
+	text-align:right;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+textarea#editpage {
+	font-family: tahoma;
+	font-size: 12px;
+	width: 100%;
+}
+
+input {
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+input.text {
+	border: 1px solid #000000;
+	font-family: tahoma;
+	font-size: 10px;
+	width: 80%;
+}
+
+select {
+	font-family: tahoma;
+	font-size: 12px;
+	width: 124px;
+}
+
+h1 {
+	text-align:none;
+	font-family: tahoma;
+	font-size: 15px;
+	color: #FFFFFF;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+hr {
+	color: #FFFFFF;
+}
+
+a.menu:link,a.menu:visited {
+	display: block;
+	border: none;
+	text-align:center;
+	text-indent: 0px;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: FFFFFF;
+	background: url(./images/menu_normal.png)  no-repeat;
+	height: 25px;
+	margin-bottom: 5px;
+	padding-top:5px;
+}
+
+a.menu:hover {
+	display: block;
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: FFFFFF;
+	background: url(./images/menu_selected.png)  no-repeat;
+	height: 25px;
+	margin-bottom: 5px;
+	padding-top:5px;
+}
+
+th#top{
+	background: url(./images/body_top.png)  no-repeat right top;
+	text-align:right;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: tahoma;
+	font-size: 15px;
+	color: #FFFFFF;	
+	height: 55px;
+}
+
+td#body{
+	background: url(./images/body_body.png);
+	text-align: justify;
+	font-family: tahoma;
+	font-size: 10px;
+	color: #FFFFFF;	
+}
+
+td#bottom{
+	background: url(./images/body_bottom.png)  no-repeat left bottom;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 9px;
+	color: #FFFFFF;
+	height: 55px;
+}
+
+.moduletable {
+	border-collapse: collapse;
+	margin-bottom: 25px;
+	width: 160px;
+}
+
+.moduletable th {
+	background: url(./images/mod_head.png)  no-repeat;
+	text-align:none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFFF;	
+	width: 160px;
+	height: 30px;
+}
+
+.moduletable td{
+	background: url(./images/mod_body.png)  no-repeat bottom left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	text-align: justify;
+	font-family: tahoma;
+	font-size: 10px;
+	color: #FFFFFF;	
+	width: 160px;
+}

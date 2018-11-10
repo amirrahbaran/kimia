@@ -1,0 +1,401 @@
+body {
+	margin: 0px;
+	background: url(./images/background.png);
+	font-family: tahoma;
+	font-size: 10px;
+	color: #FFFFEE;
+	}
+
+table#main {
+	border-collapse: collapse;
+	width: 800px;
+}
+
+.mainbody {
+	border-collapse: collapse;
+	width: 800px;
+}
+
+.loginbody {
+	border-collapse: collapse;
+	width: 350px;
+}
+
+a:link,a:visited {
+	color: #22FF13;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+ul.tabs {
+	list-style:none;
+}
+
+li.tabs {
+	margin-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	list-style:none;
+	width: 65px;
+	line-height: 30px;
+	white-space: nowrap;
+	float: right;
+}
+
+a.tabs:link,a.tabs:visited {
+	display: block;
+	border: none;
+	text-align:center;
+	text-indent: 0px;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFDD;
+	background: url(./images/tabs_normal.png)  no-repeat;
+}
+
+a.tabs:hover {
+	display: block;
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #000000;
+	background: url(./images/tabs_selected.png)  no-repeat;
+}
+
+ul.button {
+	list-style:none;
+}
+
+li.button {
+	margin-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	list-style:none;
+	width: 105px;
+	line-height: 30px;
+	white-space: nowrap;
+	float: right;	
+}
+
+a.button:link,a.button:visited {
+	display: block;
+	border: none;
+	text-align:center;
+	text-indent: 0px;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFDD;
+	background: url(./images/button_normal.png)  no-repeat;
+}
+
+a.button:hover {
+	display: block;
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	background: url(./images/button_selected.png)  no-repeat;
+}
+
+ul.disable_button {
+	list-style:none;
+}
+
+li.disable_button {
+	margin-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	list-style:none;
+	width: 105px;
+	line-height: 30px;
+	white-space: nowrap;
+	float: right;
+}
+
+a.disable_button {
+	display: block;
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #909090;
+	background: url(./images/button_disable.png)  no-repeat;		
+}
+
+.warning {
+	color: #FFFF00;
+}
+
+.mybutton {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFDD;
+	border: none;
+	background: url(./images/button_normal.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.mybutton:hover {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	background: url(./images/button_selected.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+}
+
+
+div#page {
+	text-indent: 25px;
+	text-align:right;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFEE;
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div#login {
+	text-align:right;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFEE;
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div#edit {
+	text-indent: 0px;
+	text-align:right;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+textarea#editpage {
+	font-family: tahoma;
+	font-size: 12px;
+	width: 100%;
+}
+
+input {
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+input.text {
+	background-color: #bfc6cb;
+	border: 1px solid #000000;
+	text-align: left;
+	font-family: tahoma;
+	font-size: 10px;
+	width: 120px;
+}
+
+input.check {
+	background-color: #bfc6cb;
+	font-family: tahoma;
+	font-size: 10px;
+	margin: 0px;
+}
+
+select.text {
+	background-color: #bfc6cb;	
+	border: 1px solid #000000;
+	text-align: left;
+	font-family: tahoma;
+	font-size: 10px;
+	width: 120px;
+}
+
+select.list {
+	background-color: #bfc6cb;
+	border: 1px solid #000000;
+	text-align: left;
+	font-family: tahoma;
+	font-size: 10px;
+	width: 120px;
+	height: 150px;
+}
+
+h1 {
+	font-family: tahoma;
+	font-size: 15px;
+	color: #FFFFEE;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+hr {
+	color: #FFFFEE;
+}
+
+th#top{
+	background: url(./images/body_top.png)  no-repeat right top;
+	text-align:right;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: tahoma;
+	font-size: 15px;
+	color: #FFFFEE;	
+	height: 55px;
+}
+
+td#body{
+	background: url(./images/body_body.png);
+	text-align: justify;
+	font-family: tahoma;
+	font-size: 10px;
+	color: #FFFFEE;	
+}
+
+td#bottom{
+	background: url(./images/body_bottom.png)  no-repeat left bottom;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 9px;
+	color: #FFFFEE;
+	height: 55px;
+}
+
+table.toolbar {
+	border-collapse: collapse;
+	border: 1px solid #000000;
+	background-color: #F1F3F5;
+	}
+
+td.toolbar {
+	text-align: center;
+	border: none;
+	}
+
+img.toolbar {	
+	border: none;
+	width: 32px;
+	height: 32px;
+	}	
+
+a.toolbar {	
+	display: block;
+	color: #000080;
+	font-family: tahoma;
+	background-color: #F1F3F5;
+	font-size: 10px;		
+	padding: 0px;		
+	width: 48px;
+	height: 48px;
+	}
+
+a.toolbar:hover{	
+	display: block;
+	color: #800000;
+	font-family: tahoma;
+	background-color: #F1F3F5;
+	font-size: 10px;		
+	padding: 0px;		
+	width: 48px;
+	height: 48px;
+	}
+
+td.navigation {
+	text-align: center;
+	border: none;
+}
+
+img.navigation {	
+	border: none;
+	width: 100px;
+	height: 30px;
+	}	
+
+a.navigation {
+	display: block;
+	padding-top: 7px;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFDD;
+	border: none;
+	background: url(./images/button_normal.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	}
+
+a.navigation:hover{
+	display: block;
+	padding-top: 7px;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	background: url(./images/button_selected.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	}
+	
+a.disable_button {
+	display: block;
+	padding-top: 7px;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #E0E0E0;
+	border: none;
+	background: url(./images/button_disable.png)  no-repeat;
+	width: 100px;
+	height: 30px;
+	}
+
+table.moduletable {
+	border-collapse: collapse;
+	border: 1px solid #FFFFEE;	
+}
+
+table.moduleform {
+	border: none;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #FFFFEE;
+}
+
+td.moduletable1 {
+	border-right: 1px solid #FFFFFF;
+	background-color: #EEEEEE;
+	text-align: left;
+	font-size: 12px;
+	color: #800000;
+}
+
+td.moduletable2 {
+	border-right: 1px solid #FFFFFF;
+	background-color: #DDDDDD;
+	text-align: left;
+	font-size: 12px;	
+	color: #800000;
+}
+
+th.moduletable {
+	border: none;
+	background-color: #BBBBBB;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #202020;
+}
+	
