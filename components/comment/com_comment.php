@@ -1,11 +1,11 @@
 <?php
 //....fetch the posted comments from the xml file.....
 	$content='';
-	if (file_exists("./data/temp/comment_".erfanwiki_encode($title).".xml"))
+	if (file_exists("./data/temp/comment_".kimia_encode($title).".xml"))
 		{
 		$content.="----";
 		//--- loading the xml file
-		$comment_xml = simplexml_load_file('./data/temp/comment_'.erfanwiki_encode($title).'.xml');
+		$comment_xml = simplexml_load_file('./data/temp/comment_'.kimia_encode($title).'.xml');
 		//--- reading all records
 		$xmlcount=0;
 		foreach($comment_xml->post as $article)
@@ -46,13 +46,13 @@
 		$content.='<input type="submit" value="Send" class="mybutton">';
 		$content.='</font></form>';
 		} else {
-				if (!file_exists("./data/temp/comment_".erfanwiki_encode($title).".xml"))
+				if (!file_exists("./data/temp/comment_".kimia_encode($title).".xml"))
 					{
 					$comment='<?xml version="1.0"?>'.chr(13).chr(10);		
 					$comment.='<index>'.chr(13).chr(10);	
 					}else{
 					//--- loading the xml file
-					$xml = simplexml_load_file('./data/temp/comment_'.erfanwiki_encode($title).'.xml');	
+					$xml = simplexml_load_file('./data/temp/comment_'.kimia_encode($title).'.xml');	
 					//--- genetaring xml string
 					$lastxml=$xml->asXML();
 					$comment=preg_replace('/<\/index>/','',$lastxml);
@@ -66,7 +66,7 @@
 				$comment.=chr(9).'</post>'.chr(13).chr(10);
 				$comment.='</index>';
 				//--- saving the xml
-				file_put_contents('./data/temp/comment_'.erfanwiki_encode($title).'.xml',$comment);
+				file_put_contents('./data/temp/comment_'.kimia_encode($title).'.xml',$comment);
 				}
 	$resultstring=$content;
 	?>

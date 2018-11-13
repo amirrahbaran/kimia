@@ -1,6 +1,6 @@
 <?php
 $Template['tempname'] = "print";
-$Template['createdby'] = "Erfan Arabfakhri";
-$Template['comments'] = "template for ERFAN WIKI printable view.";
+$Template['createdby'] = "Amir Reza Rahbaran";
+$Template['comments'] = "template for Kimia printable view.";
 $Template['type'] = "system";
 ?>

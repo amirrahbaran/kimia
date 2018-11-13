@@ -1,14 +1,11 @@
 <?php
 
 /*
-   KAVIR WIKI/CMS : a wiki/cms with no database and ajax technology
+   # Kimia WIKI/CMS : a wiki/cms with no database and ajax technology
+	
+	Authors: Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
  
-   Authors: 
-			Erfan Arabfakhri, Esfahan, Iran, <buttercupgreen@gmail.com>
-			Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
- 
-   Version:  2.0.0  (your constructive criticism is appreciated, please see our
-   project page on http://sourceforge.net/projects/---
+    Version:  2.0.0  (your constructive criticism is appreciated, please see our
  
    Licence:  GNU General Public License
 
@@ -18,7 +15,7 @@
    GNU General Public License for more details.
 */
 
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 function kavir_setup()
 	{
@@ -36,7 +33,7 @@ function kavir_setup()
 
 	if($_GET['login']=='true')
 		{
-		if($_COOKIE["ERFANWIKI"]["logged-in"]!=true)
+		if($_COOKIE["KIMIA"]["logged-in"]!=true)
 			{
 			print login_form();
 			die('');		
@@ -194,7 +191,7 @@ function kavir_mainbody()
 	//$article=$title;
 	$mark="";
 	$stop=false;
-	$username=$_COOKIE["ERFANWIKI"]["username"];
+	$username=$_COOKIE["KIMIA"]["username"];
 	$permission=check_permission($username,$title);
 	
 	if($_GET['mark']!="")

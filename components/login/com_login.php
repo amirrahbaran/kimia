@@ -1,12 +1,12 @@
 <?php
 $content='';
-if($_COOKIE["ERFANWIKI"]["logged-in"]==true)
+if($_COOKIE["KIMIA"]["logged-in"]==true)
 	{
-	$content.='Welcome <b>'.$_COOKIE["ERFANWIKI"]["username"].'</b>';
+	$content.='Welcome <b>'.$_COOKIE["KIMIA"]["username"].'</b>';
 	$content.='<ul class="button"><li class="button" style="float: none;"><a class="button" href="'.$_SERVER['PHP_SELF'].'?title=Home&amp;logout=true">خروج</a></li></ul>';
-	$content.=$_COOKIE["ERFANWIKI"]["name"].'<br>';
-	$content.=$_COOKIE["ERFANWIKI"]["group"].'<br>';
-	$content.=$_COOKIE["ERFANWIKI"]["ip"].'<br>';
+	$content.=$_COOKIE["KIMIA"]["name"].'<br>';
+	$content.=$_COOKIE["KIMIA"]["group"].'<br>';
+	$content.=$_COOKIE["KIMIA"]["ip"].'<br>';
 	} else {
 	$content.='<form method="POST" action="'.$_SERVER['PHP_SELF'].'?title='.$title.'">';
 	$content.='کد کاربری';

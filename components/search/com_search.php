@@ -22,11 +22,11 @@
 		$searchresult1 = "";
 		foreach ($myresult as $myfiles) 
 			{
-			if (preg_match("/".$keyword."/i", erfanwiki_decode($myfiles)) == true)
+			if (preg_match("/".$keyword."/i", kimia_decode($myfiles)) == true)
 				{
 				$isfound = true;
 				$count = $count + 1;
-				$searchresult1 = $searchresult1  . "<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?title=".erfanwiki_decode($myfiles)."'>".erfanwiki_decode($myfiles)."</a></li>";
+				$searchresult1 = $searchresult1  . "<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?title=".kimia_decode($myfiles)."'>".kimia_decode($myfiles)."</a></li>";
 				if ($count >= 20) break;
 				}
 			}
@@ -48,7 +48,7 @@
 				{
 				$isfound = ture;
 				$count = $count + 1;
-				$searchresult2 = $searchresult2  . "<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?highlight=".$keyword."&amp;title=".erfanwiki_decode($myfiles)."'>".erfanwiki_decode($myfiles)."</a></li>";
+				$searchresult2 = $searchresult2  . "<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?highlight=".$keyword."&amp;title=".kimia_decode($myfiles)."'>".kimia_decode($myfiles)."</a></li>";
 				if ($count >= 20) break;
 				}
 			}

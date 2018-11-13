@@ -31,7 +31,7 @@
 		{
 		$cat_flag=true;
 		$cat_value=$params[0];
-		$cat_value1='_'.erfanwiki_encode($params[0]);
+		$cat_value1='_'.kimia_encode($params[0]);
 		}
 
 	//check whether there is the second element;
@@ -113,14 +113,14 @@
 						{
 /*							$rss.=chr(9).chr(9).'<item>'.chr(13).chr(10);
 							$rss.='<u>'.$cnt.'</u><br/>';
-							$rss.=erfanwiki_decode($xml->article[$cnt]->title).'<br/>';
+							$rss.=kimia_decode($xml->article[$cnt]->title).'<br/>';
 							$rss.=$xml->article[$cnt]->category.'<br/>';
 							$rss.=$xml->article[$cnt]->year.'/'.$xml->article[$cnt]->month.'/'.$xml->article[$cnt]->day.'<br/>';
 							$rss.=$xml->article[$cnt]->time.'<br/>';
 							$rss.=$xml->article[$cnt]->editor.'<br/><hr/>';
 */
 							$rss.=chr(9).chr(9).'<item>'.chr(13).chr(10).chr(13);
-							$rss.=chr(9).chr(9).chr(9).'<title>'.erfanwiki_decode($xml->article[$cnt]->title).'</title>'.chr(13).chr(10);
+							$rss.=chr(9).chr(9).chr(9).'<title>'.kimia_decode($xml->article[$cnt]->title).'</title>'.chr(13).chr(10);
 							$rss.=chr(9).chr(9).chr(9).'<link></link>'.chr(13).chr(10);
 							$rss.=chr(9).chr(9).chr(9).'<description>'.get_description($xml->article[$cnt]->title).'</description>'.chr(13).chr(10);
 							$rss.=chr(9).chr(9).chr(9).'<pubDate>'.$xml->article[$cnt]->year.'/'.$xml->article[$cnt]->month.'/'.$xml->article[$cnt]->day.'</pubDate>'.chr(13).chr(10);

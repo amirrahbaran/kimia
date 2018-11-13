@@ -1,6 +1,6 @@
 <?php
 $Template['tempname'] = "default";
-$Template['createdby'] = "Erfan Arabfakhri";
-$Template['comments'] = "Default template for ERFAN WIKI.";
+$Template['createdby'] = "Amir Reza Rahbatran";
+$Template['comments'] = "Default template for Kimia.";
 $Template['type'] = "default";
 ?>

@@ -1,14 +1,11 @@
 <?php
 /*					
 
-	KAVIR WIKI/CMS : a wiki/cms with no database and ajax technology
+	# Kimia WIKI/CMS : a wiki/cms with no database and ajax technology
 	
-	Authors: 
-			Erfan Arabfakhri, Esfahan, Iran, <buttercupgreen@gmail.com>
-			Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
+	Authors: Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
  
     Version:  2.0.0  (your constructive criticism is appreciated, please see our
-    project page on http://sourceforge.net/projects/---
  
    Licence:  GNU General Public License
 
@@ -18,7 +15,7 @@
    GNU General Public License for more details.
  */
 
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 class toolbar
 	{

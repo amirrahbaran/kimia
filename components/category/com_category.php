@@ -77,7 +77,7 @@ define('NEXT',      '[بعدی]');
 				if($category == $category_value)
 					{
 					//creating array of updates
-					$articles_array[]="[[".erfanwiki_decode($title)."]]";
+					$articles_array[]="[[".kimia_decode($title)."]]";
 					}
 				//--- count records
 				$xmlcount++;

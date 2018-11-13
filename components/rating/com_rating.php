@@ -1,9 +1,9 @@
 <?php
 	$content="";
-	$tagname="rate_".erfanwiki_encode($title);	
+	$tagname="rate_".kimia_encode($title);	
 	if($params[0]!="")
 		{
-		$tagname="rate_".erfanwiki_encode($params[0]);
+		$tagname="rate_".kimia_encode($params[0]);
 		}				
 
 	$rate=$_GET[$tagname];

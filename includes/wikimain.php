@@ -1,13 +1,10 @@
 <?php
 /*
-	KAVIR WIKI/CMS : a wiki/cms with no database and ajax technology
- 
-    Authors: 
-			Erfan Arabfakhri, Esfahan, Iran, <buttercupgreen@gmail.com>
-			Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
+	# Kimia WIKI/CMS : a wiki/cms with no database and ajax technology
+	
+	Authors: Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
  
     Version:  2.0.0  (your constructive criticism is appreciated, please see our
-    project page on http://sourceforge.net/projects/---
  
    Licence:  GNU General Public License
 
@@ -16,7 +13,7 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
 */
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 function get_title()
 	{
@@ -59,7 +56,7 @@ function dologin($username,$password)
 	
 	if(user_exists($username)==true)
 		{	
-		if($_COOKIE["ERFANWIKI"]["logged-in"]!=true)
+		if($_COOKIE["KIMIA"]["logged-in"]!=true)
 			{
 			if($username!='' && $password!='')
 				{
@@ -90,14 +87,14 @@ function dologout()
 function check_permission($username,$title)
 	{
 	$result="";
-	if($_COOKIE["ERFANWIKI"]["logged-in"]==true) { $result.="logged-in;"; }
-	if($_COOKIE["ERFANWIKI"]["group"]=="admin") { $result.="admin;"; }
-	if($_COOKIE["ERFANWIKI"]["group"]=="editor") { $result.="editor;"; }
-	if($_COOKIE["ERFANWIKI"]["group"]=="user") { $result.="user;"; }
+	if($_COOKIE["KIMIA"]["logged-in"]==true) { $result.="logged-in;"; }
+	if($_COOKIE["KIMIA"]["group"]=="admin") { $result.="admin;"; }
+	if($_COOKIE["KIMIA"]["group"]=="editor") { $result.="editor;"; }
+	if($_COOKIE["KIMIA"]["group"]=="user") { $result.="user;"; }
 	return $result;
 	}
 
-function erfanwiki_encode($mystring)
+function kimia_encode($mystring)
 	{
 	$mybase32=new Base32;
 	$mybase32->setCharset(Base32::csSafe);
@@ -105,7 +102,7 @@ function erfanwiki_encode($mystring)
 	return $mystring;
 	}
 
-function erfanwiki_decode($mystring)
+function kimia_decode($mystring)
 	{
 	$mybase32=new Base32;
 	$mybase32->setCharset(Base32::csSafe);
@@ -116,7 +113,7 @@ function erfanwiki_decode($mystring)
 function page_exists($title)
 	{
 	$result=false;
-	$datafile=erfanwiki_encode($title);
+	$datafile=kimia_encode($title);
 	if(file_exists('./data/pages/'.$datafile)==true)
 		{
 		$result=true;
@@ -207,7 +204,7 @@ function process_patterns($title, $in)
 			if (preg_match("/\{\{(.*?)\}\}/",$v2))
 				{
 				$pattern_name = preg_replace("/\{\{(.*?)\}\}/","$1",$v2);
-				$datafile =  erfanwiki_encode($pattern_name);
+				$datafile =  kimia_encode($pattern_name);
 				if (!$pattern = @file_get_contents('./data/pages/'.$datafile))
 					{
 					$pattern = "[[" . $pattern_name . "]]";
@@ -239,11 +236,11 @@ function searchpage($keyword)
 	$searchresult1="";
 	foreach($myresult as $myfiles) 
 		{
-		if(preg_match("/".$keyword."/i", erfanwiki_decode($myfiles)) == true)
+		if(preg_match("/".$keyword."/i", kimia_decode($myfiles)) == true)
 			{
 			$isfound=ture;
 			$count=$count+1;
-			$searchresult1=$searchresult1."<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?title=".erfanwiki_decode($myfiles)."'>".erfanwiki_decode($myfiles)."</a></li>";
+			$searchresult1=$searchresult1."<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?title=".kimia_decode($myfiles)."'>".kimia_decode($myfiles)."</a></li>";
 			if($count >= 20) break;
 			}
 		}
@@ -264,7 +261,7 @@ function searchpage($keyword)
 			{
 			$isfound=ture;
 			$count=$count+1;
-			$searchresult2=$searchresult2."<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?mark=".$keyword."&amp;title=".erfanwiki_decode($myfiles)."'>".erfanwiki_decode($myfiles)."</a></li>";
+			$searchresult2=$searchresult2."<li style='list-style:none'>$count . <a href='".$_SERVER['PHP_SELF']."?mark=".$keyword."&amp;title=".kimia_decode($myfiles)."'>".kimia_decode($myfiles)."</a></li>";
 			if($count>=20) break;
 			}
 		}
@@ -287,7 +284,7 @@ function displaypage($title,$mark)
 	
 	if(page_exists($title)==true)
 		{
-		$datafile=erfanwiki_encode($title);
+		$datafile=kimia_encode($title);
 		$page=file_get_contents('./data/pages/'.$datafile);		
 		if($mark!='')
 			{
@@ -315,7 +312,7 @@ function createpage($title)
 		{
 		if($_POST['save']!='')
 			{
-			$datafile=erfanwiki_encode($title);
+			$datafile=kimia_encode($title);
 			file_put_contents('./data/pages/'.$datafile,stripslashes($_POST['page']));
 			add_article_index($title,'');
 			$output=displaypage($title,"");
@@ -350,7 +347,7 @@ function editpage($title)
 		{
 		if($_POST['save']!='')
 			{
-			$datafile=erfanwiki_encode($title);
+			$datafile=kimia_encode($title);
 			file_put_contents('./data/pages/'.$datafile,stripslashes($_POST['page']));
 			add_article_index(preg_replace('/ /','_',$title),'');
 			$output=displaypage($title,"");
@@ -362,7 +359,7 @@ function editpage($title)
 		{
 		if(page_exists($title)==true)
 			{
-			$datafile=erfanwiki_encode($title);
+			$datafile=kimia_encode($title);
 			$page=file_get_contents('./data/pages/'.$datafile);
 	
 			$output='';

@@ -11,7 +11,7 @@
 					{
 					if($category==$params[0])
 						{
-						$randomarticle[]=erfanwiki_encode($article->title);
+						$randomarticle[]=kimia_encode($article->title);
 						}
 					}
 				}

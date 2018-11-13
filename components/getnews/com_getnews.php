@@ -96,7 +96,7 @@
 						//if ($cnt<$num_value)
 							//{
 							$content.='<u>'.$cnt.'</u><br/>';
-							$content.=erfanwiki_decode($xml->article[$cnt]->title).'<br/>';
+							$content.=kimia_decode($xml->article[$cnt]->title).'<br/>';
 							$content.=get_summery($xml->article[$cnt]->title).'<br/>';
 							$content.=$xml->article[$cnt]->category.'<br/>';
 							$content.=$xml->article[$cnt]->year.'/'.$xml->article[$cnt]->month.'/'.$xml->article[$cnt]->day.'<br/>';

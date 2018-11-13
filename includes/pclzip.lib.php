@@ -1,5 +1,5 @@
 <?php
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 // --------------------------------------------------------------------------------
 // PhpConcept Library - Zip Module 2.5

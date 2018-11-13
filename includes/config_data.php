@@ -1,13 +1,10 @@
 <?php
 /*
- 	ERFAN WIKI : a wiki with no database based on PrintWiki
+ 	# Kimia WIKI/CMS : a wiki/cms with no database and ajax technology
+	
+	Authors: Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
  
-    Authors: 
-			Erfan Arabfakhri, Esfahan, Iran, <buttercupgreen@gmail.com>
-			Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
- 
-    Version:  0.1  (your constructive criticism is appreciated, please see our
-    project page on http://sourceforge.net/projects/erfanwiki/
+    Version:  2.0.0  (your constructive criticism is appreciated, please see our
  
    Licence:  GNU General Public License
 
@@ -16,7 +13,7 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
  */
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 function get_config_data($item)
 	{

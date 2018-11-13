@@ -1,5 +1,5 @@
 <?
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 class validform
 	{
@@ -9,7 +9,8 @@ class validform
 	var $min;
 	var $max;
 	var $required;
-	var $notvalid;	
+	var $notvalid;
+	
 	function text_box($value, $required=1, $type=null, $min=0, $max=null)
 	{
 		if ($required)
@@ -40,7 +41,8 @@ class validform
 			return $this->type_check($value,$type);
 
 		return true;
-	}
+	}
+
 function select_box($value,$required=1,$notvalid=null,$type=null,$min=null, $max=null)
 	{
 		if ($value==$notvalid)
@@ -130,7 +132,8 @@ function select_box($value,$required=1,$notvalid=null,$type=null,$min=null, $max
 				return $this->catch_email($value);
 			}
 		}
-	}
+	}
+
 	function catch_email($value)
 	{
 		if(!eregi("^([a-z0-9\\_\\.\\-]+)@([a-z0-9\\_\\.\\-]+)\\.([a-z]{2,4})$",$value)) 

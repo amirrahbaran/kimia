@@ -1,13 +1,10 @@
 <?php
 /*
- 	ERFAN WIKI : a wiki with no database based on PrintWiki
+ 	# Kimia WIKI/CMS : a wiki/cms with no database and ajax technology
+	
+	Authors: Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
  
-    Authors: 
-			Erfan Arabfakhri, Esfahan, Iran, <buttercupgreen@gmail.com>
-			Amir Reza Rahbaran, Esfahan, Iran <amirrezarahbaran@gmail.com>
- 
-    Version:  0.1  (your constructive criticism is appreciated, please see our
-    project page on http://sourceforge.net/projects/erfanwiki/
+    Version:  2.0.0  (your constructive criticism is appreciated, please see our
  
    Licence:  GNU General Public License
 
@@ -16,7 +13,7 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
  */
-defined('_ERFANWIKI') or die('<big><big><big>ACCESS DENIED !');
+defined('_KIMIA') or die('<big><big><big>ACCESS DENIED !');
 
 function add_article_index($title,$flags)
 	{
@@ -27,7 +24,7 @@ function add_article_index($title,$flags)
 	$time=date("H:i:s");
 	
 	$is_newxml=false;
-	$temp = file_get_contents('./data/pages/' . erfanwiki_encode($title));
+	$temp = file_get_contents('./data/pages/' . kimia_encode($title));
 	preg_match('/\[category:(.*?)\]/',$temp,$matches);
 	$category=$matches[1];
 	
@@ -35,7 +32,7 @@ function add_article_index($title,$flags)
 		{
 		$new_articles_index='<index>';
 		$new_articles_index.=chr(9) . '<article>' .chr(13) . chr(10);
-		$new_articles_index.=chr(9) . chr(9) . '<title>'.erfanwiki_encode($title).'</title>' .chr(13) . chr(10);
+		$new_articles_index.=chr(9) . chr(9) . '<title>'.kimia_encode($title).'</title>' .chr(13) . chr(10);
 		$new_articles_index.=chr(9) . chr(9) . '<category>'.$category.'</category>' .chr(13) . chr(10);
 		$new_articles_index.=chr(9) . chr(9) . '<editor>'.$editor.'</editor>' .chr(13) . chr(10);
 		$new_articles_index.=chr(9) . chr(9) . '<day>'.$day.'</day>' .chr(13) . chr(10);
@@ -59,10 +56,10 @@ function add_article_index($title,$flags)
 			$article_count=0;
 			foreach($articles_index->article as $article)
 				{				
-				if(erfanwiki_decode($article->title) == $title)
+				if(kimia_decode($article->title) == $title)
 					{
 					$is_found=true;
-					$articles_index->article[$article_count]->title=erfanwiki_encode($title);
+					$articles_index->article[$article_count]->title=kimia_encode($title);
 					$articles_index->article[$article_count]->category=$category;
 					$articles_index->article[$article_count]->editor=$editor;
 					$articles_index->article[$article_count]->day=$day;
@@ -82,7 +79,7 @@ function add_article_index($title,$flags)
 			{
 			$new_articles_index=preg_replace('/<\/index>/','',$new_articles_index);
 			$new_articles_index.=chr(9) . '<article>' .chr(13) . chr(10);
-			$new_articles_index.=chr(9) . chr(9) . '<title>'.erfanwiki_encode($title).'</title>' .chr(13) . chr(10);
+			$new_articles_index.=chr(9) . chr(9) . '<title>'.kimia_encode($title).'</title>' .chr(13) . chr(10);
 			$new_articles_index.=chr(9) . chr(9) . '<category>'.$category.'</category>' .chr(13) . chr(10);
 			$new_articles_index.=chr(9) . chr(9) . '<editor>'.$editor.'</editor>' .chr(13) . chr(10);
 			$new_articles_index.=chr(9) . chr(9) . '<day>'.$day.'</day>' .chr(13) . chr(10);

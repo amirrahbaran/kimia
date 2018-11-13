@@ -5,7 +5,7 @@ which is fast, cute and best of all it works with PHP4 and above.
 
 I think we should switch from "simpleXML" to "The DOMIT! XML Parser"
 
-ERFAN
+AMIR
 -------------------------------------------------------------------------------
 [mon jun 11, 2007]
 some parameters have to be defined in the installer for using in the com_rss;
@@ -27,5 +27,5 @@ AMIR
 [sun jun 17, 2007]
 all the input chracters have to be filtered by htmlspecialchars function;
 
-ERFAN
+AMIR
 
